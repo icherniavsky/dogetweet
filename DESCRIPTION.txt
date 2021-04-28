@@ -1,0 +1,26 @@
+Package: botscan
+Type: Package
+Title: Creates a dtaframe with crypto currencies and scoial media volume markers
+Version: 0.0.1
+Author: Ivan Cherniavskyi
+Maintainer: Ivan Cherniavskyi <icherniavsky@usf.edu>
+Description: The function creates data frame with 12 variables which include the name of
+	the selected crypto currency, its price and time of the last update by 
+	CoinMarketCap. Additionally, the data frame includes the conversation volume 
+	markers in various social media, such as Twitter, Google Hits and Reddit. 
+	The function also calculates the rate of change in conversation volume and 
+	price variables. 
+    analyze handles. 
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    magrittr,
+    RedditExtractoR,
+    rtweet,
+    gtrendsR,
+    coinmarketcapr
+	
+RoxygenNote: 6.1.1
+Suggests: testthat
