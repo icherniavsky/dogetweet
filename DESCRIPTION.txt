@@ -1,4 +1,4 @@
-Package: botscan
+Package: dogetweet
 Type: Package
 Title: Creates a dtaframe with crypto currencies and scoial media volume markers
 Version: 0.0.1
