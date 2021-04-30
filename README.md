@@ -1,7 +1,7 @@
 dogetweet
 ================
 Ivan Cherniavskyi
-2021-04-26
+2021-04-30
 
 This package is creating data frame which includes information about
 desired crypto currencies provided by
@@ -27,13 +27,12 @@ As a result, each user must have previously acquired Basic API Key from
 CoinMarketCap which can be found by following this
 [link](https://coinmarketcap.com/api/).
 
-Additionally, each user must have tweeter account for
+Additionally, each user must have twitter account for
 <code>rtweet</code> to work. At the first start of
 <code>dogetweet</code>, <code>rtweet</code> will connect you to Twitter
 API automatically in a new window of your browser. Be aware that the
-function <code>stream\_tweets</code> that this package relies on \<
-code\>rtweet</code> which has some restrictions. More information can be
-found
+function <code>stream\_tweets</code> has some restrictions. More
+information about the restricitions can be found
 [here](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/guides/streaming-message-types).
 
 ## Usage
@@ -55,6 +54,20 @@ user with all crypto currencies available for usage with
 
 ``` cryoto_names
 crypto_names(name = "crypto_list")
+
+crypto_names(crypto_list)
+
+Example of the crypto_list object:
+
+[1] Bitcoin
+
+[2] Euthereum
+
+[3] Binance Coin
+
+[4] XRP
+
+[5] Tether
 ```
 
 <code>crypto\_names</code> has one argument which assigns the chosen
@@ -78,13 +91,11 @@ The first argument is the name of crypto currency to perform search for.
 The default is Dogecoin.
 
 The next argument determines how long an open stream of tweets will be
-collected, with a default of 60 seconds.Please be aware that
+collected, with a default of 60 seconds. Please be aware that
 <code>rtweet</code> has several restriction. It is not recommended to
 run the function more than 1 time per minute or run two searches
 simultaneously. More information can be found
 [here](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/guides/streaming-message-types).
-
-![An example of data frame](C:\\Users\\07che\\Desktop\\doge.PNG)
 
 The data frame has 12 variables. Name variable is the name of the
 selected crypto currency. USD\_last\_updated is the time when the price
@@ -96,7 +107,7 @@ Twitter\_change is the rate of change in number of tweets. Google\_hits
 is the number of hits in Google regarding the currency. Google\_change
 describes the rate of change in hits. Reddit\_comments shows the number
 of comments in Reddit regarding crypto. And reddit\_change describes the
-rate of change of reddit comments.
+rate of change of Reddit comments.
 
 This process takes some time, as dogetweet is rely on multiple
 dependencies such as Rtweet, RedditExtractoR and gtrendsR which take
