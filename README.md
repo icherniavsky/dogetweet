@@ -97,6 +97,8 @@ run the function more than 1 time per minute or run two searches
 simultaneously. More information can be found
 [here](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/guides/streaming-message-types).
 
+![](https://github.com/icherniavsky/dogetweet/blob/master/data_frame_example/dogecoin_data_example.PNG)
+
 The data frame has 12 variables. Name variable is the name of the
 selected crypto currency. USD\_last\_updated is the time when the price
 of the currency was updated by CoinMarketCap. Sys\_time and Sys\_date
