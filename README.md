@@ -1,7 +1,7 @@
 dogetweet
 ================
 Ivan Cherniavskyi
-2021-04-30
+2021-05-05
 
 This package is creating data frame which includes information about
 desired crypto currencies provided by
@@ -109,6 +109,6 @@ describes the rate of change in hits. Reddit\_comments shows the number
 of comments in Reddit regarding crypto. And reddit\_change describes the
 rate of change of Reddit comments.
 
-This process takes some time, as dogetweet is rely on multiple
+This process takes some time, as dogetweet relies on multiple
 dependencies such as Rtweet, RedditExtractoR and gtrendsR which take
 some time to run.
